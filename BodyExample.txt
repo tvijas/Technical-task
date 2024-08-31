@@ -1,0 +1,24 @@
+POST http://localhost:8080/api/company
+
+{
+    "name": "Some Name",
+    "departmentList": [
+        {
+            "name": "Some name",
+            "teamList": [
+                {
+                    "name": "Some name",
+                    "project": {
+                        "manager": {
+                            "name": "Some name",
+                            "surname": "Some surname",
+                            "email": "someEmail@gmail.com",
+                            "address": "Some address",
+                            "phoneNumber": "+48 000 000 000"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
