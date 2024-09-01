@@ -34,30 +34,16 @@ To do so, make sure the following are installed on your device:
    mvn spring-boot:run
 5. Try to send POST request to http://localhost:8080/api/company with body from BodyExample.
 
-## Running Tests
-
 To run the tests, follow these steps:
 
-1. **Download the Project**
-
-   Ensure you have the project files downloaded to your local machine.
-
-2. **Open the Project**
-
-   Open the project using a code editor or an Integrated Development Environment (IDE) of your choice.
-
-3. **Start Docker**
-
-   Make sure Docker is running on your machine.
-
-4. **Run the Tests**
+1. **Run the Tests**
 
    Navigate to the root directory of the project and execute the following command in the terminal:
 
    ```bash
    mvn test
 
-5. **Enjoy!!!**
+2. **Enjoy!!!**
 
    Enjoy the fact that you didn't have to write these tests yourself!
 
