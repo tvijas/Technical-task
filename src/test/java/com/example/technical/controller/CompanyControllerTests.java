@@ -293,7 +293,7 @@ public class CompanyControllerTests {
         Company createdCompany = objectMapper.readValue(responseBody, Company.class);
 
         mockMvc.perform(delete("/api/company/" + createdCompany.getId()))
-                .andExpect(status().isOk());
+                .andExpect(status().isNoContent());
         assertFalse(existsById("company", createdCompany.getId()));
         assertFalse(existsById("department", createdCompany.getDepartmentList().get(0).getId()));
         assertFalse(existsById("team", createdCompany.getDepartmentList().get(0).getTeamList().get(0).getId()));
